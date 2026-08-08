@@ -56,6 +56,14 @@ The shape of that workflow, and the reasons it is shaped that way:
 
 For repositories that must carry a version inside a file (a plugin manifest, `package.json`, a chart), add `@semantic-release/exec` to write the version during `prepare` and `@semantic-release/git` to commit it back, and list both in the workflow's `extra_plugins`. Anything that can derive its version from the git tag should do that instead of committing a version.
 
+### Pushing back to a protected branch
+
+`@semantic-release/git` pushes the version commit straight to the default branch, which a ruleset requiring pull requests rejects with `GH013: Repository rule violations found`. Do not solve this by weakening the ruleset for everyone.
+
+Granting bypass to a GitHub App is not enough on its own: the workflow authenticates as `github-actions[bot]` through `GITHUB_TOKEN`, so the push is still rejected even when the app is listed as a bypass actor. The push has to authenticate as the app. Mint an installation token with `actions/create-github-app-token`, pass it to `actions/checkout` as `token:`, and use it as `GITHUB_TOKEN` for semantic-release.
+
+That gives a dedicated release identity with a narrow bypass, keeps `GITHUB_TOKEN` unprivileged, and makes release commits attributable to the app rather than to a human. If no such app exists, the alternatives are to stop committing a version at all and let consumers track the tag, or to switch to `release-please`, which proposes the bump as a pull request and so needs no bypass.
+
 `release-please` is the alternative when the project wants a release PR to accumulate changes before publishing. Pick one per repository, never both.
 
 ## Semantic versioning rules

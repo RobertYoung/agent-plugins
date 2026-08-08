@@ -9,6 +9,11 @@
   "homepage": "https://github.com/RobertYoung/agent-plugins",
   "repository": "https://github.com/RobertYoung/agent-plugins",
   "license": "MIT",
-  "keywords": ["github", "codeowners", "documentation", "community-health"],
-  "version": "0.0.0"
+  "keywords": [
+    "github",
+    "codeowners",
+    "documentation",
+    "community-health"
+  ],
+  "version": "1.0.0"
 }

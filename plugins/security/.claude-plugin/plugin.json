@@ -9,6 +9,11 @@
   "homepage": "https://github.com/RobertYoung/agent-plugins",
   "repository": "https://github.com/RobertYoung/agent-plugins",
   "license": "MIT",
-  "keywords": ["security", "audit", "secrets", "vulnerabilities"],
-  "version": "0.0.0"
+  "keywords": [
+    "security",
+    "audit",
+    "secrets",
+    "vulnerabilities"
+  ],
+  "version": "1.0.0"
 }

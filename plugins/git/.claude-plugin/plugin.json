@@ -9,6 +9,12 @@
   "homepage": "https://github.com/RobertYoung/agent-plugins",
   "repository": "https://github.com/RobertYoung/agent-plugins",
   "license": "MIT",
-  "keywords": ["git", "github", "gitlab", "pull-request", "merge-request"],
-  "version": "0.0.0"
+  "keywords": [
+    "git",
+    "github",
+    "gitlab",
+    "pull-request",
+    "merge-request"
+  ],
+  "version": "1.0.0"
 }

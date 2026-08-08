@@ -1,0 +1,110 @@
+{
+  "name": "robertyoung-agent-plugins",
+  "description": "Personal Claude Code plugins for infrastructure and delivery standards",
+  "owner": {
+    "name": "Robert Young",
+    "email": "rob@romicosolutions.co.uk",
+    "url": "https://github.com/RobertYoung"
+  },
+  "plugins": [
+    {
+      "name": "ci",
+      "source": "./plugins/ci",
+      "description": "CI/CD standards: automated semver releases, conventional commits, Dependabot, hardened GitHub Actions",
+      "category": "ci-cd",
+      "tags": [
+        "github-actions",
+        "ci",
+        "release",
+        "semantic-release",
+        "conventional-commits",
+        "dependabot"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/RobertYoung/agent-plugins",
+      "repository": "https://github.com/RobertYoung/agent-plugins",
+      "author": {
+        "name": "Robert Young"
+      },
+      "version": "0.0.0"
+    },
+    {
+      "name": "iac",
+      "source": "./plugins/iac",
+      "description": "Infrastructure as code standards, starting with Terraform and OpenTofu conventions",
+      "category": "infrastructure",
+      "tags": [
+        "terraform",
+        "opentofu",
+        "iac",
+        "standards"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/RobertYoung/agent-plugins",
+      "repository": "https://github.com/RobertYoung/agent-plugins",
+      "author": {
+        "name": "Robert Young"
+      },
+      "version": "0.0.0"
+    },
+    {
+      "name": "github",
+      "source": "./plugins/github",
+      "description": "Repository hygiene: community health files, templates, CODEOWNERS, and discoverability",
+      "category": "documentation",
+      "tags": [
+        "github",
+        "codeowners",
+        "documentation",
+        "community-health"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/RobertYoung/agent-plugins",
+      "repository": "https://github.com/RobertYoung/agent-plugins",
+      "author": {
+        "name": "Robert Young"
+      },
+      "version": "0.0.0"
+    },
+    {
+      "name": "security",
+      "source": "./plugins/security",
+      "description": "Security auditing for secrets, dependencies, and insecure configuration",
+      "category": "security",
+      "tags": [
+        "security",
+        "audit",
+        "secrets",
+        "vulnerabilities"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/RobertYoung/agent-plugins",
+      "repository": "https://github.com/RobertYoung/agent-plugins",
+      "author": {
+        "name": "Robert Young"
+      },
+      "version": "0.0.0"
+    },
+    {
+      "name": "git",
+      "source": "./plugins/git",
+      "description": "Pull and merge request workflows for GitHub and GitLab",
+      "category": "workflow",
+      "tags": [
+        "git",
+        "github",
+        "gitlab",
+        "pull-request",
+        "merge-request"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/RobertYoung/agent-plugins",
+      "repository": "https://github.com/RobertYoung/agent-plugins",
+      "author": {
+        "name": "Robert Young"
+      },
+      "version": "0.0.0"
+    }
+  ],
+  "version": "0.0.0"
+}

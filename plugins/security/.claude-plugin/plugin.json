@@ -1,0 +1,14 @@
+{
+  "name": "security",
+  "displayName": "Security",
+  "description": "Security auditing for secrets, dependencies, and insecure configuration",
+  "author": {
+    "name": "Robert Young",
+    "email": "rob@romicosolutions.co.uk"
+  },
+  "homepage": "https://github.com/RobertYoung/agent-plugins",
+  "repository": "https://github.com/RobertYoung/agent-plugins",
+  "license": "MIT",
+  "keywords": ["security", "audit", "secrets", "vulnerabilities"],
+  "version": "0.0.0"
+}

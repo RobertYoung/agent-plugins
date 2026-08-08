@@ -1,0 +1,14 @@
+{
+  "name": "github",
+  "displayName": "GitHub",
+  "description": "Repository hygiene: community health files, templates, CODEOWNERS, and discoverability",
+  "author": {
+    "name": "Robert Young",
+    "email": "rob@romicosolutions.co.uk"
+  },
+  "homepage": "https://github.com/RobertYoung/agent-plugins",
+  "repository": "https://github.com/RobertYoung/agent-plugins",
+  "license": "MIT",
+  "keywords": ["github", "codeowners", "documentation", "community-health"],
+  "version": "0.0.0"
+}

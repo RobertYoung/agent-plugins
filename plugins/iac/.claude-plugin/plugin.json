@@ -1,0 +1,19 @@
+{
+  "name": "iac",
+  "displayName": "Infrastructure as Code",
+  "description": "Infrastructure as code standards, starting with Terraform and OpenTofu conventions",
+  "author": {
+    "name": "Robert Young",
+    "email": "rob@romicosolutions.co.uk"
+  },
+  "homepage": "https://github.com/RobertYoung/agent-plugins",
+  "repository": "https://github.com/RobertYoung/agent-plugins",
+  "license": "MIT",
+  "keywords": [
+    "terraform",
+    "opentofu",
+    "iac",
+    "standards"
+  ],
+  "version": "0.0.0"
+}

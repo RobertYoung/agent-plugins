@@ -1,0 +1,14 @@
+{
+  "name": "git",
+  "displayName": "Git",
+  "description": "Pull and merge request workflows for GitHub and GitLab",
+  "author": {
+    "name": "Robert Young",
+    "email": "rob@romicosolutions.co.uk"
+  },
+  "homepage": "https://github.com/RobertYoung/agent-plugins",
+  "repository": "https://github.com/RobertYoung/agent-plugins",
+  "license": "MIT",
+  "keywords": ["git", "github", "gitlab", "pull-request", "merge-request"],
+  "version": "0.0.0"
+}

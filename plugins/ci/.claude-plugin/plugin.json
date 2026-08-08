@@ -1,0 +1,21 @@
+{
+  "name": "ci",
+  "displayName": "CI",
+  "description": "CI/CD standards: automated semver releases, conventional commits, Dependabot, hardened GitHub Actions",
+  "author": {
+    "name": "Robert Young",
+    "email": "rob@romicosolutions.co.uk"
+  },
+  "homepage": "https://github.com/RobertYoung/agent-plugins",
+  "repository": "https://github.com/RobertYoung/agent-plugins",
+  "license": "MIT",
+  "keywords": [
+    "github-actions",
+    "ci",
+    "release",
+    "semantic-release",
+    "conventional-commits",
+    "dependabot"
+  ],
+  "version": "0.0.0"
+}

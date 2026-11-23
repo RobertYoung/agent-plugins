@@ -20,11 +20,46 @@ Keep the branch at a single commit. The history should show the change, not the 
 
 ## MR
 
-Create it with `glab mr create`, or bring an existing one back in line with the amended commit using `glab mr update`. The title matches the commit subject and the body is:
+Create it with `glab mr create`, or bring an existing one back in line with the amended commit using `glab mr update`. The title matches the commit subject. The body has these sections, in this order:
 
-### Summary
+```markdown
+## Description
 
-- 1-3 bullet points describing the changes
-- Focus on WHAT changed and WHY
+One or two sentences on what the change is.
 
-Note: No test plan section needed - TDD means tests are already written and passing.
+## What changed
+
+- One bullet per change.
+
+## Why
+
+The problem and its impact, with evidence or links.
+
+## How
+
+The approach taken.
+
+## Testing
+
+The commands run and their results, links to the CI pipelines, and screenshots.
+
+## Links
+
+- Related issues, merge requests and docs, as full URLs.
+- Closes group/project#N (Part of group/project#N for one part; leave out with no issue)
+```
+
+- Testing: add the CI pipeline links with `glab mr update` once the pipeline runs, and embed at least one screenshot for any change a reviewer can see.
+- Describe the change itself. No question ids, quotes of who asked for it or who answered what.
+
+## Screenshots
+
+Capture a web UI with the Orca browser (orca-cli skill) or a headless browser against a test copy of the app with test data, never production. When you start the app yourself, run it in the background on its own port, record its PID and stop it with `kill <pid>`.
+
+Look at every image before uploading it. It must show no secret, token, credential, private hostname or personal data. An uploaded image stays reachable by its URL and is world-readable in a public project.
+
+Host images with GitLab's project uploads API, and embed the `markdown` field of the response:
+
+```sh
+glab api -X POST projects/:id/uploads --form "file=@shot.png"
+```
